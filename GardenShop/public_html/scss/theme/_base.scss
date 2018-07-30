@@ -1,0 +1,20 @@
+
+
+html{
+    font-size: 14px;
+}
+
+@media(min-width:992px){
+   html{
+    font-size: 16px;
+} 
+}
+
+img{
+    max-width: 100%;
+}
+
+a:hover, a:focus, a:visited{
+    outline: none !important;
+}
+
