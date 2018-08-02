@@ -1,0 +1,54 @@
+$p-color: $gray-100;
+$link-color: $gray-100;
+
+
+header{
+    color: $p-color;
+    font-size:12px;
+    a{
+        color: $link-color;
+        font-size: 12px;
+        &:hover{
+            color: $p-color;
+        }
+    }
+    div{
+        span.fa{
+            margin-right: 5px;
+        } 
+    }
+    .header-details{
+        div{
+            margin-bottom: 5px;
+            a:last-of-type{
+                margin-left: 18px;
+            }
+        }
+    }
+    
+    
+
+}
+
+
+
+@media(min-width:992px){
+    header{
+        .header-details{
+            padding-left:180px;
+            div{
+                margin-bottom: 10px;
+            }
+        }        
+    }  
+.input-group{
+        button{
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 20px;
+            border: 0;
+        }
+}
+
+}

@@ -1,14 +1,54 @@
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("font/HelveticaNeue/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("font/HelveticaNeue/HelveticaNeue.woff") format("woff"), url("font/HelveticaNeue/HelveticaNeue.ttf") format("truetype"), url("font/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeue-Bold';
+  src: url("font/HelveticaNeue-Bold/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("font/HelveticaNeue-Bold/HelveticaNeue-Bold.woff") format("woff"), url("font/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf") format("truetype"), url("font/HelveticaNeue-Bold/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeue-Light';
+  src: url("font/HelveticaNeue-Light/HelveticaNeue-Light.eot?#iefix") format("embedded-opentype"), url("font/HelveticaNeue-Light/HelveticaNeue-Light.woff") format("woff"), url("font/HelveticaNeue-Light/HelveticaNeue-Light.ttf") format("truetype"), url("font/HelveticaNeue-Light/HelveticaNeue-Light.svg#HelveticaNeue-Light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeue-Medium';
+  src: url("font/HelveticaNeue-Medium/HelveticaNeue-Medium.eot?#iefix") format("embedded-opentype"), url("font/HelveticaNeue-Medium/HelveticaNeue-Medium.woff") format("woff"), url("font/HelveticaNeue-Medium/HelveticaNeue-Medium.ttf") format("truetype"), url("font/HelveticaNeue-Medium/HelveticaNeue-Medium.svg#HelveticaNeue-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'SocialGothic';
+  src: url("font/SocialGothic/SocialGothic.eot?#iefix") format("embedded-opentype"), url("font/SocialGothic/SocialGothic.woff") format("woff"), url("font/SocialGothic/SocialGothic.ttf") format("truetype"), url("font/SocialGothic/SocialGothic.svg#SocialGothic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'SocialGothic-DemiBold';
+  src: url("font/SocialGothic-DemiBold/SocialGothic-DemiBold.eot?#iefix") format("embedded-opentype"), url("font/SocialGothic-DemiBold/SocialGothic-DemiBold.woff") format("woff"), url("font/SocialGothic-DemiBold/SocialGothic-DemiBold.ttf") format("truetype"), url("font/SocialGothic-DemiBold/SocialGothic-DemiBold.svg#SocialGothic-DemiBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: 'HelveticaNeue-Medium'; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'SocialGothic-DemiBold'; }
+
 html {
   font-size: 14px; }
 
-@media (min-width: 992px) {
-  html {
-    font-size: 16px; } }
 img {
   max-width: 100%; }
 
 a:hover, a:focus, a:visited {
-  outline: none !important; }
+  outline: none !important;
+  text-decoration: none; }
+
+p {
+  margin-bottom: 0; }
+
+.form-group {
+  margin-bottom: 0; }
 
 /* Buzz Out */
 @-webkit-keyframes buzz {
@@ -78,7 +118,7 @@ a:hover, a:focus, a:visited {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent; }
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
 
 .buzz:hover, .buzz:focus, .buzz:active {
   -webkit-animation-name: buzz;
@@ -230,14 +270,14 @@ a:hover, a:focus, a:visited {
 .has-success .col-form-label,
 .has-success .form-check-label,
 .has-success .custom-control {
-  color: #28a745; }
+  color: #6FB25D; }
 
 .has-success .form-control {
-  border-color: #28a745; }
+  border-color: #6FB25D; }
 
 .has-success .input-group-addon {
-  color: #28a745;
-  border-color: #28a745;
+  color: #6FB25D;
+  border-color: #6FB25D;
   background-color: #eaf6ea; }
 
 .has-success .form-control-success {
@@ -248,14 +288,14 @@ a:hover, a:focus, a:visited {
 .has-warning .col-form-label,
 .has-warning .form-check-label,
 .has-warning .custom-control {
-  color: #ffc107; }
+  color: #FD3B03; }
 
 .has-warning .form-control {
-  border-color: #ffc107; }
+  border-color: #FD3B03; }
 
 .has-warning .input-group-addon {
-  color: #ffc107;
-  border-color: #ffc107;
+  color: #FD3B03;
+  border-color: #FD3B03;
   background-color: white; }
 
 .has-warning .form-control-warning {
@@ -282,5 +322,33 @@ a:hover, a:focus, a:visited {
 
 .error-msg > * {
   color: #dc3545; }
+
+header {
+  color: #ECE9E8;
+  font-size: 12px; }
+  header a {
+    color: #ECE9E8;
+    font-size: 12px; }
+    header a:hover {
+      color: #ECE9E8; }
+  header div span.fa {
+    margin-right: 5px; }
+  header .header-details div {
+    margin-bottom: 5px; }
+    header .header-details div a:last-of-type {
+      margin-left: 18px; }
+
+@media (min-width: 992px) {
+  header .header-details {
+    padding-left: 180px; }
+    header .header-details div {
+      margin-bottom: 10px; }
+
+  .input-group button {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    border: 0; } }
 
 /*# sourceMappingURL=theme.css.map */
