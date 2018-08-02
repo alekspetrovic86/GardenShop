@@ -44,6 +44,9 @@ a:hover, a:focus, a:visited {
   outline: none !important;
   text-decoration: none; }
 
+button {
+  outline: none !important; }
+
 p {
   margin-bottom: 0; }
 
@@ -337,18 +340,74 @@ header {
     margin-bottom: 5px; }
     header .header-details div a:last-of-type {
       margin-left: 18px; }
+  header .row div.col-12:first-of-type {
+    display: none; }
+  header .row div.col-12:last-of-type {
+    display: none !important; }
+
+.search {
+  width: 180px; }
+  .search .form-control {
+    border: 0;
+    box-shadow: none;
+    height: 35px;
+    line-height: 1.2rem;
+    color: #fff; }
+  .search button {
+    width: 40px;
+    line-height: 35px;
+    font-size: 16px;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    box-shadow: 0;
+    background-color: #5E9E4D;
+    color: #fff; }
+  .search button span.fa {
+    margin-right: 0; }
 
 @media (min-width: 992px) {
   header .header-details {
-    padding-left: 180px; }
+    padding-left: 110px; }
     header .header-details div {
       margin-bottom: 10px; }
+  header .row div.col-12:first-of-type {
+    display: block; }
+  header .row div.col-12:last-of-type {
+    display: flex !important; }
+  header button span.fa {
+    margin-right: 0; } }
+@media (min-width: 1200px) {
+  header .header-details {
+    padding-left: 160px; } }
+.navbar {
+  padding: 15px 0; }
 
-  .input-group button {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    font-size: 20px;
-    border: 0; } }
+.navbar-brand img {
+  height: 45px; }
+
+.search-mobile {
+  text-align: center;
+  margin-right: 10px; }
+  .search-mobile span {
+    color: #fff;
+    font-size: 30px;
+    width: 60px;
+    line-height: 40px;
+    padding: 5px; }
+
+.navbar .navbar-toggler {
+  border: 1px solid #fff;
+  padding-top: 8px;
+  padding-bottom: 8px; }
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+
+@media (min-width: 992px) {
+  .navigation {
+    background-color: #ECE9E8 !important; }
+
+  .navbar-brand img {
+    height: auto; } }
 
 /*# sourceMappingURL=theme.css.map */

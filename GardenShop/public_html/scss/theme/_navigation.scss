@@ -1,0 +1,54 @@
+
+
+.navbar{
+    padding: 15px 0;
+}
+
+.navbar-brand{
+    img{
+        height: 45px;
+    }
+}
+
+.search-mobile{
+    text-align:center;
+    margin-right:10px;
+    span{
+        color: $white;
+        font-size: 30px;
+        width: 60px;
+        line-height: 40px;
+        padding: 5px;
+    }
+}
+
+.navbar{
+    .navbar-toggler{
+        border: 1px solid $white;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        .navbar-toggler-icon{
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media(min-width:992px){
+    .navigation{
+        background-color: $gray-100 !important;
+    }
+    .navbar-brand{
+        img{
+            height: auto;
+        }
+    }
+
+}
