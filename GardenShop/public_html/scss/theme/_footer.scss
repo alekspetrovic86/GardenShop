@@ -1,0 +1,37 @@
+$footercolor: $white;
+
+
+
+footer{
+    a,p{
+        color: $footercolor;
+        font-size: 12px;
+    }
+    span{
+        margin-right: 8px;
+    }
+    a:hover{
+        color: $footercolor;
+    }
+    .footer-brand{
+        max-width: 130px;
+    }
+    padding: 14px 0;
+
+}
+
+
+
+
+@media(min-width:768px){
+    footer{
+        padding: 20px 0;
+    }
+
+}
+@media(min-width:992px){
+    footer{
+        padding: 28px 0;
+    }
+
+}

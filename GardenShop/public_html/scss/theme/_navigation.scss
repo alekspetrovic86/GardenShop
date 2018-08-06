@@ -1,8 +1,7 @@
+$linkColor: $gray-900;
+$linkBgColor: $white;
 
 
-.navbar{
-    padding: 15px 0;
-}
 
 .navbar-brand{
     img{
@@ -13,23 +12,87 @@
 .search-mobile{
     text-align:center;
     margin-right:10px;
-    span{
+    .fa{
         color: $white;
-        font-size: 30px;
+        font-size: 2rem;
         width: 60px;
+        height: 40px;
         line-height: 40px;
-        padding: 5px;
     }
 }
 
 .navbar{
+    padding: 0;
     .navbar-toggler{
-        border: 1px solid $white;
+        border: 1.3px solid $white;
         padding-top: 8px;
         padding-bottom: 8px;
         .navbar-toggler-icon{
-                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+    }
+    .nav-item{
+        border-bottom: 1px solid $gray-400;
+        background-color: $linkBgColor;
+        transition:0.5s ease;
+        .nav-link{
+            font-size: 1.3rem;
+            color: $linkColor;           
+            padding: 5px 15px;           
+            position:relative;
+            transition:0.5s ease;
+            span{
+                position: absolute;
+                height: 38.3px;
+                width: 40px;
+                line-height: 37.3px;
+                text-align: center;
+                top: 0;
+                right: 0;
+                z-index: 2;
+                font-size: 1rem;
+            }
+        }
+        &:hover,&.active{
+            background-color: $gray-400;
+            .nav-link{                                      
+                color: color-yiq($gray-400);
+            }
+        }
+    }
+    .search{
+        width: 100%;
+    }
+    .navbar-nav{
+        background-color: $green;
+    }
+    .search-toggle{
+        display: none;
+        width: 100%;
+    }
+    .submenu{
+        background-color: #ebffe5;        
+        li{
+            &:first-of-type a{
+                border-top: 1px solid $gray-400;
+            }
+            a{
+                color: $linkColor;
+                padding: 5px 0;
+                display: block;
+                &.submenu-active{
+                    font-weight: bold;   
+                }
+            }
+            &:hover{
+                font-weight: bold;
+            }
+        }
+        display: none; 
+        z-index: 5;
+        .container{
+            padding-right: 0px;
+            padding-left: 0px;
         }
     }
 }
@@ -44,10 +107,132 @@
 @media(min-width:992px){
     .navigation{
         background-color: $gray-100 !important;
+        position: relative;
     }
     .navbar-brand{
-        img{
-            height: auto;
+        display: none;
+    }
+    .search-mobile,.search-toggle{
+        display: none!important;
+    }
+    .navbar{
+        position: static;
+        background-color: transparent!important;
+        .nav-item{            
+            border-bottom: none;
+            background-color: transparent;
+            .nav-link{
+                font-size: 1rem;
+                color: $gray-400;           
+                padding: 12px 0px;           
+                position:static;
+                transition:none;
+                span{
+                    position: static;
+                    height: auto;
+                    width: auto;
+                    line-height: 1.2;
+                    text-align: center;
+                    font-size: 1rem;
+                }
+            }
+            &:hover,&.active{
+                border-bottom: none;
+                background-color: transparent;
+                .nav-link{                                      
+                    color: $gray-400;
+                    font-weight: bold;
+                }
+            }
+            .submenu{
+                display: none!important;
+            }
+            &:hover{
+                .submenu{
+                    display: flex!important;
+                }
+            }
+
+            &:first-of-type{
+                min-width:74px;
+                text-align:left;
+                .nav-link{
+                    span{
+                        margin-left: 5px;
+                    }
+                }
+            }
+            &:nth-of-type(2){
+                min-width:101px;             
+            }
+            &:nth-of-type(3){
+                min-width:122px;
+                .nav-link{
+                    span{
+                        margin-left: 13px;
+                    }
+                }
+            }  
+            &:nth-of-type(4){
+                min-width:82px;               
+            }
+            &:last-of-type{
+                min-width:120px;
+                .nav-link{
+                    text-align: right;
+                    color:$green-2;
+                    font-family: 'HelveticaNeue-Bold';
+                    span{
+                        margin-left: 22px;
+                    }
+                }
+            }
+            &:last-of-type:hover{
+                .nav-link{
+                    font-weight: normal;
+                }
+                .submenu{
+                    display: none;
+                }
+            }
+        }
+        .navbar-nav{
+            background-color: transparent;  
+            width: 100%;
+        }
+        .submenu{
+            background-color: #f0f4ef;
+            li{
+                margin-right:127px;
+                &:first-of-type{
+                    a{
+                        border-top: none;
+                    }
+                }
+                a{
+                    font-family: 'SocialGothic-DemiBold';
+                    font-weight: bold;
+                    color: $green-3;
+                    padding: 39px 0;
+                    display: block;
+                    &.submenu-active{
+                        font-weight: bold;   
+                    }
+                }
+                &:hover{
+                    font-weight: normal;                   
+                }                
+            }
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top:100%;
+            background-color: $white;
+            border-bottom: 2px solid $green; 
+            .container{
+                padding-right: 15px;
+                padding-left: 15px;
+            }
         }
     }
 

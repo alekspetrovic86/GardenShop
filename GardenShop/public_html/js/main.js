@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    
+$(document).ready(function () {
+
     function animation() {
 
         var windowHeight = $(window).height();
@@ -14,15 +14,33 @@ $(document).ready(function(){
             }
         });
     }
-    
+
     animation();
-    
-    $(window).scroll(function(){
+
+    $(window).scroll(function () {
         animation();
     });
+
+
+//    SHOW/HIDE SEARCH
+
+    $('.search-mobile .fa').click(function (e) {
+        e.preventDefault();
+        $('.search-toggle').slideToggle(function () {
+        });
+    });
+
+    //SHOW/HIDE SUBMENU
     
-    
-    
+    $('.nav-link .fa').click(function (e) {
+        e.preventDefault();
+        if(screen.width <= 992){
+        $(this).parent().next('.submenu').slideToggle();
+    }
+    });
+
+
+
 });
 
 

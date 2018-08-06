@@ -46,7 +46,7 @@
                         <form class="input-group search">
                             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                             <div class="input-group-append text-center">
-                                <button type="button" id="button-addon2"><span class="fa fa-search"></span></button>
+                                <button><span class="fa fa-search"></span></button>
                             </div>
                         </form>
                     </div> 
@@ -57,7 +57,7 @@
 
 
         <!--NAVIGATION START-->
-        <section class="navigation" style="background-color: #6FB25D;">
+        <section class="navigation py-2 p-lg-0" style="background-color: #6FB25D;">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light bg-green">
                     <a class="navbar-brand" href="#">
@@ -69,25 +69,77 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
-                    <div class="collapse navbar-collapse" id="main-menu">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>                           
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Disabled</a>
-                            </li>
-                        </ul>
-                        <form class="input-group search">
+                    <div class="search-toggle">
+                        <form class="input-group search mb-2 mb-lg-0 mt-3 mt-lg-0">
                             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                             <div class="input-group-append text-center">
-                                <button type="button" id="button-addon2"><span class="fa fa-search"></span></button>
+                                <button><span class="fa fa-search"></span></button>
                             </div>
                         </form>
+                    </div>
+                    <div class="collapse navbar-collapse mt-2 mt-lg-0" id="main-menu">
+                        <ul class="navbar-nav mr-auto mr-lg-0 mb-3 mb-lg-0 text-center">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home<span class="fa fa-chevron-down"></span></a>
+                                <div class="submenu">
+                                    <div class="container">
+                                        <ul class="list-unstyled text-uppercase d-lg-flex">
+                                            <li>
+                                                <a href="#" class="submenu-active">homepage style one</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">homepage style two</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">homepage style three</a>
+                                            </li>
+                                        </ul>                                       
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About us</a>
+                            </li>                           
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services<span class="fa fa-chevron-down"></span></a>
+                                <div class="submenu">
+                                    <div class="container">                                        
+                                        <ul class="list-unstyled text-uppercase d-lg-flex">
+                                            <li>
+                                                <a href="#">services style one</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">services style two</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">services style three</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item mb-3 mb-lg-0">
+                                <a class="nav-link" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item ml-lg-auto">
+                                <a class="nav-link text-uppercase" href="#">menu<span class="fa fa-chevron-down d-lg-none"></span><span class="menu-icon fa fa-bars d-none d-lg-inline-block"></span></a>
+                                <div class="submenu">
+                                    <div class="container">                                        
+                                        <ul class="submenu-menu list-unstyled text-uppercase d-lg-flex">
+                                            <li>
+                                                <a href="#">contact us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">locations</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">gallery</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -95,6 +147,30 @@
 
 
 
+
+
+
+        <!--FOOTER START-->
+        <footer style="background-color: #404040">
+            <div class="container">
+                <div class="row text-center justify-content-between align-items-center">
+                    <div class="col-12 col-md-6 col-lg-4 text-md-left mb-3 mb-md-0">
+                        <a class="footer-brand d-inline-block">
+                            <img src="img/logo.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-md-right text-lg-left text-xl-center align-self-md-start align-self-lg-center">
+                        <div class="footer-info-wrapper">
+                            <a class="d-inline-block mr-4" href="#"><span class="fa fa-mobile"></span>(+01) 123 456 7896</a>                         
+                            <a class="d-inline-block" href="mailto:gardenshop@gmail.com"><span class="fa fa-envelope-o"></span>gardenshop@gmail.com</a>                          
+                        </div>  
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 text-md-right align-self-lg-center">
+                        <p class="d-inline-block"><span class="fa fa-clock-o"></span>Monday-Friday : 9:00 AM to 7:00 PM  Sunday : Closed</p>
+                    </div>
+                </div>
+            </div>
+        </footer><!--FOOTER ENDS-->
 
 
 
