@@ -1,4 +1,7 @@
 .popular-products{
+    .popular-products-slider{
+        border-bottom:1px solid $gray-100;
+    }
     .popular-products-item{
         figure{
             margin-bottom: 1rem!important;
@@ -16,15 +19,18 @@
         }
         a,p{
             color: $gray-300;
+            font-family: 'SocialGothic';
+            font-size: 16px;
         }
         h5{
             a{
-                font-weight: bold;
-                font-size: 1.2rem;
+                font-family: 'SocialGothic-DemiBold';
             }
         }
         p:last-of-type{
             color: $green;
+            font-family: 'SocialGothic-DemiBold';
+            font-size: 18px;
         }
         .discount{
             text-align:center;

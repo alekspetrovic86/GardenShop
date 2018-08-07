@@ -24,7 +24,7 @@ $linkBgColor: $white;
 .navbar{
     padding: 0;
     .navbar-toggler{
-        border: 1.3px solid $white;
+        border: none;
         padding: 9px;
         overflow:hidden;
         span{
@@ -55,7 +55,7 @@ $linkBgColor: $white;
         }
     }
     .nav-item{
-        border-bottom: 1px solid $gray-400;
+        border-bottom: 1px solid rgba($gray-400,0.1);
         background-color: $linkBgColor;
         transition:0.5s ease;
         .nav-link{
@@ -77,7 +77,7 @@ $linkBgColor: $white;
             }
         }
         &:hover,&.active{
-            background-color: $gray-400;
+            background-color: $green-2;
             .nav-link{                                      
                 color: color-yiq($gray-400);
             }

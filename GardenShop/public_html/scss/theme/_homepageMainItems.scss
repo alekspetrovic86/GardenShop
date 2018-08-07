@@ -1,0 +1,30 @@
+
+
+
+.homepage-main-items{
+    .row{
+        .col-12:first-of-type{
+            .homepage-main-items-wrapper{
+                background-image: url('assets/homepage/homepage-main-items-1.png'), linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);  
+            }            
+        }
+        .col-12:nth-of-type(2){
+            .homepage-main-items-wrapper{
+                background-image: url('assets/homepage/homepage-main-items-2.png'), linear-gradient(190.24deg, rgba(0,0,0,0) 0%, #000000 100%);   
+            }            
+        }
+        .col-12:nth-of-type(3){
+            .homepage-main-items-wrapper{
+                background-image: url('assets/homepage/homepage-main-items-3.png'), linear-gradient(190.24deg, rgba(0,0,0,0) 0%, #000000 100%);   
+            }            
+        }
+    }
+    .homepage-main-items-wrapper{       
+        height: 250px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+

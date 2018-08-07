@@ -1,35 +1,35 @@
 @font-face {
   font-family: 'HelveticaNeue';
-  src: url("fonts/HelveticaNeue/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("font/HelveticaNeue/HelveticaNeue.woff") format("woff"), url("font/HelveticaNeue/HelveticaNeue.ttf") format("truetype"), url("font/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  src: url("fonts/HelveticaNeue/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeue/HelveticaNeue.woff") format("woff"), url("fonts/HelveticaNeue/HelveticaNeue.ttf") format("truetype"), url("fonts/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'HelveticaNeue-Bold';
-  src: url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("font/HelveticaNeue-Bold/HelveticaNeue-Bold.woff") format("woff"), url("font/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf") format("truetype"), url("font/HelveticaNeue-Bold/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
+  src: url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.woff") format("woff"), url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf") format("truetype"), url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'HelveticaNeue-Light';
-  src: url("fonts/HelveticaNeue-Light/HelveticaNeue-Light.eot?#iefix") format("embedded-opentype"), url("font/HelveticaNeue-Light/HelveticaNeue-Light.woff") format("woff"), url("font/HelveticaNeue-Light/HelveticaNeue-Light.ttf") format("truetype"), url("font/HelveticaNeue-Light/HelveticaNeue-Light.svg#HelveticaNeue-Light") format("svg");
+  src: url("fonts/HelveticaNeue-Light/HelveticaNeue-Light.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeue-Light/HelveticaNeue-Light.woff") format("woff"), url("fonts/HelveticaNeue-Light/HelveticaNeue-Light.ttf") format("truetype"), url("fonts/HelveticaNeue-Light/HelveticaNeue-Light.svg#HelveticaNeue-Light") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'HelveticaNeue-Medium';
-  src: url("fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.eot?#iefix") format("embedded-opentype"), url("font/HelveticaNeue-Medium/HelveticaNeue-Medium.woff") format("woff"), url("font/HelveticaNeue-Medium/HelveticaNeue-Medium.ttf") format("truetype"), url("font/HelveticaNeue-Medium/HelveticaNeue-Medium.svg#HelveticaNeue-Medium") format("svg");
+  src: url("fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.woff") format("woff"), url("fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.ttf") format("truetype"), url("fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.svg#HelveticaNeue-Medium") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'SocialGothic';
-  src: url("fonts/SocialGothic/SocialGothic.eot?#iefix") format("embedded-opentype"), url("font/SocialGothic/SocialGothic.woff") format("woff"), url("font/SocialGothic/SocialGothic.ttf") format("truetype"), url("font/SocialGothic/SocialGothic.svg#SocialGothic") format("svg");
+  src: url("fonts/SocialGothic/SocialGothic.eot?#iefix") format("embedded-opentype"), url("fonts/SocialGothic/SocialGothic.woff") format("woff"), url("fonts/SocialGothic/SocialGothic.ttf") format("truetype"), url("fonts/SocialGothic/SocialGothic.svg#SocialGothic") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'SocialGothic-DemiBold';
-  src: url("fonts/SocialGothic/SocialGothic-DemiBold.eot?#iefix") format("embedded-opentype"), url("font/SocialGothic/SocialGothic-DemiBold.woff") format("woff"), url("font/SocialGothic/SocialGothic-DemiBold.ttf") format("truetype"), url("font/SocialGothic/SocialGothic-DemiBold.svg#SocialGothic-DemiBold") format("svg");
+  src: url("fonts/SocialGothic-DemiBold/SocialGothic-DemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/SocialGothic-DemiBold/SocialGothic-DemiBold.woff") format("woff"), url("fonts/SocialGothic-DemiBold/SocialGothic-DemiBold.ttf") format("truetype"), url("fonts/SocialGothic-DemiBold/SocialGothic-DemiBold.svg#SocialGothic-DemiBold") format("svg");
   font-weight: normal;
   font-style: normal; }
 body {
-  font-family: 'HelveticaNeue-Medium'; }
+  font-family: 'HelveticaNeue'; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'SocialGothic-DemiBold'; }
@@ -659,7 +659,7 @@ header {
 .navbar {
   padding: 0; }
   .navbar .navbar-toggler {
-    border: 1.3px solid #fff;
+    border: none;
     padding: 9px;
     overflow: hidden; }
     .navbar .navbar-toggler span {
@@ -681,7 +681,7 @@ header {
     .navbar .navbar-toggler .navbar-toggler-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
   .navbar .nav-item {
-    border-bottom: 1px solid #404040;
+    border-bottom: 1px solid rgba(64, 64, 64, 0.1);
     background-color: #fff;
     transition: 0.5s ease; }
     .navbar .nav-item .nav-link {
@@ -701,7 +701,7 @@ header {
         z-index: 2;
         font-size: 1rem; }
     .navbar .nav-item:hover, .navbar .nav-item.active {
-      background-color: #404040; }
+      background-color: #5E9E4D; }
       .navbar .nav-item:hover .nav-link, .navbar .nav-item.active .nav-link {
         color: #fff; }
   .navbar .search {
@@ -836,6 +836,7 @@ footer .container {
   padding-bottom: 14px;
   position: relative; }
 footer .btn {
+  font-family: 'SocialGothic-DemiBold';
   padding-right: 0.5rem;
   z-index: 7;
   position: absolute;
@@ -862,6 +863,10 @@ footer .btn {
   margin-bottom: 0; }
 .homepage-main-slider-1 .lead-slider-details {
   padding: 20px 15px; }
+  .homepage-main-slider-1 .lead-slider-details h4 {
+    font-family: 'HelveticaNeue'; }
+  .homepage-main-slider-1 .lead-slider-details a {
+    font-family: 'SocialGothic-DemiBold'; }
 .homepage-main-slider-1 li {
   height: 220px;
   background-size: cover;
@@ -952,6 +957,8 @@ footer .btn {
     font-size: 2.57rem; } }
 .popular-products {
   position: relative; }
+  .popular-products .popular-products-slider {
+    border-bottom: 1px solid #ECE9E8; }
   .popular-products .popular-products-item figure {
     margin-bottom: 1rem !important;
     width: 190px;
@@ -964,12 +971,15 @@ footer .btn {
       width: 100%;
       height: 100%; }
   .popular-products .popular-products-item a, .popular-products .popular-products-item p {
-    color: #333333; }
+    color: #333333;
+    font-family: 'SocialGothic';
+    font-size: 16px; }
   .popular-products .popular-products-item h5 a {
-    font-weight: bold;
-    font-size: 1.2rem; }
+    font-family: 'SocialGothic-DemiBold'; }
   .popular-products .popular-products-item p:last-of-type {
-    color: #6FB25D; }
+    color: #6FB25D;
+    font-family: 'SocialGothic-DemiBold';
+    font-size: 18px; }
   .popular-products .popular-products-item .discount {
     text-align: center;
     width: 60px;
@@ -1022,5 +1032,17 @@ footer .btn {
     margin-top: 0px; }
     .popular-products .owl-nav {
       top: -29px; } }
+.homepage-main-items .row .col-12:first-of-type .homepage-main-items-wrapper {
+  background-image: url("assets/homepage/homepage-main-items-1.png"), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%); }
+.homepage-main-items .row .col-12:nth-of-type(2) .homepage-main-items-wrapper {
+  background-image: url("assets/homepage/homepage-main-items-2.png"), linear-gradient(190.24deg, rgba(0, 0, 0, 0) 0%, #000000 100%); }
+.homepage-main-items .row .col-12:nth-of-type(3) .homepage-main-items-wrapper {
+  background-image: url("assets/homepage/homepage-main-items-3.png"), linear-gradient(190.24deg, rgba(0, 0, 0, 0) 0%, #000000 100%); }
+.homepage-main-items .homepage-main-items-wrapper {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 /*# sourceMappingURL=theme.css.map */

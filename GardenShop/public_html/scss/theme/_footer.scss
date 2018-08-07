@@ -17,11 +17,12 @@ footer{
         max-width: 130px;
     }
     .container{
-      padding-top: 14px;  
-      padding-bottom: 14px;
-      position: relative;
+        padding-top: 14px;  
+        padding-bottom: 14px;
+        position: relative;
     }
-    .btn{
+    .btn{       
+        font-family: 'SocialGothic-DemiBold';       
         padding-right:0.5rem;
         z-index:7;
         span{
@@ -43,8 +44,8 @@ footer{
 @media(min-width:768px){
     footer{
         .container{
-           padding-top: 20px; 
-           padding-bottom: 20px; 
+            padding-top: 20px; 
+            padding-bottom: 20px; 
         }       
     }
 
@@ -52,8 +53,8 @@ footer{
 @media(min-width:992px){
     footer{
         .container{
-          padding-top: 28px;  
-          padding-bottom: 28px;  
+            padding-top: 28px;  
+            padding-bottom: 28px;  
         }
         .btn{
             top: -37px;
