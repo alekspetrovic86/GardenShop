@@ -25,8 +25,31 @@ $linkBgColor: $white;
     padding: 0;
     .navbar-toggler{
         border: 1.3px solid $white;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding: 9px;
+        overflow:hidden;
+        span{
+            display: block;
+            height: 2px;
+            width: 25px;
+            margin-bottom: 5px;
+            background: $white;
+            &:last-of-type{
+                margin-bottom: 0px;
+            }            
+            transition: 0.4s linear;
+        }
+        &.active{
+            span:nth-of-type(2){
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            span:first-of-type{
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            span:last-of-type{
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+        }
         .navbar-toggler-icon{
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         }

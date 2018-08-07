@@ -1,0 +1,100 @@
+.popular-products{
+    .popular-products-item{
+        figure{
+            margin-bottom: 1rem!important;
+            width: 190px;
+            height: 240px;
+            position:relative;
+            a{
+                height: 100%;
+            }
+            img{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        a,p{
+            color: $gray-300;
+        }
+        h5{
+            a{
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+        }
+        p:last-of-type{
+            color: $green;
+        }
+        .discount{
+            text-align:center;
+            p{
+                color: $white;
+                font-size: 10px;
+                &:first-of-type{
+                    font-size: 12px;
+                    padding-top: 10px
+                }
+                &:last-of-type{
+                    padding-bottom: 11px;
+                }
+            }
+            width: 60px;
+            height: 60px;
+            line-height: 18px;
+            background-color: $green;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            right: -20px;
+            bottom: 0px;
+        }
+    }
+    .owl-nav{
+        margin: 0;
+        position: absolute;
+        top: -43px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .owl-prev,.owl-next{
+        margin:0!important;
+        &:hover{
+            background : none!important;
+        }
+        span{
+            font-size: 2rem;
+            height: 30px;
+            width: 30px;
+            color: $white;
+            background-color: $green!important;
+            display: block;
+            line-height: 25px;  
+            border-radius: 2px!important;
+            text-align: center;
+        }
+    } 
+    position: relative;
+
+}
+
+
+@media(min-width:360px){
+    .popular-products{
+        margin-top:30px;
+        .owl-nav{
+            top:-65px;
+        }
+    }
+}
+@media(min-width:440px){
+    .popular-products{
+        margin-top:0px;
+        .owl-nav{
+            top:-29px;
+        }
+    }
+}
