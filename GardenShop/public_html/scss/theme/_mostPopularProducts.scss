@@ -1,4 +1,8 @@
 .popular-products{
+    h3{
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
     .popular-products-slider{
         border-bottom:1px solid $gray-100;
     }
@@ -36,10 +40,11 @@
             text-align:center;
             p{
                 color: $white;
-                font-size: 10px;
+                font-family: 'SocialGothic-DemiBold';
+                font-size:10px;
                 &:first-of-type{
-                    font-size: 12px;
-                    padding-top: 10px
+                    font-size: 17px;
+                    padding-top: 10px;
                 }
                 &:last-of-type{
                     padding-bottom: 11px;
@@ -59,7 +64,7 @@
     .owl-nav{
         margin: 0;
         position: absolute;
-        top: -43px;
+        top: -29px;
         left: 0px;
         right: 0px;
         display: flex;
@@ -84,23 +89,38 @@
         }
     } 
     position: relative;
-
+    margin-top:0px;
 }
 
 
-@media(min-width:360px){
+
+@media(min-width:440px){
     .popular-products{
-        margin-top:30px;
-        .owl-nav{
-            top:-65px;
+        h3{
+            font-size: 24px;
+            padding-bottom: 0px;
+        }
+        .popular-products-item{
+            .discount{
+                width: 66px;
+                height: 66px;
+                p{
+                &:first-of-type{
+                    font-size: 20px;
+                    padding-top: 14px;
+                }
+                &:last-of-type{
+                    padding-bottom: 12px;
+                    font-size: 11px;
+                }
+            }
+            }
         }
     }
 }
-@media(min-width:440px){
+
+@media(min-width:992px){
     .popular-products{
-        margin-top:0px;
-        .owl-nav{
-            top:-29px;
-        }
+        margin-bottom: 25px!important;
     }
 }

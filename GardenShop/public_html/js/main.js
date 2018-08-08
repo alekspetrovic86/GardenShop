@@ -47,7 +47,7 @@ $(document).ready(function () {
             $(this).toggleClass('fa-chevron-down fa-chevron-up');
         }
     });
-    
+
     //EASE SCROLL
 
     $(document).on('click', 'a[href^="#"]', function (event) {
@@ -57,29 +57,29 @@ $(document).ready(function () {
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 1000);
     });
-    
-    
+
+
 
     //SLIDER
-    
+
     if ($('.owl-carousel').length > 0) {
-        
+
         $('.lead-slider-1').owlCarousel({
             loop: true,
             margin: 0,
             responsiveClass: true,
             dots: false,
             autoplay: true,
-            nav:true,
-            items:1
+            nav: true,
+            items: 1
 
-            
+
         });
-        
-        
-        
-        
-        
+
+
+
+
+
         $('.popular-products-slider').owlCarousel({
             loop: true,
             margin: 30,
@@ -103,7 +103,7 @@ $(document).ready(function () {
                 }
             }
         });
-        
+
         $('.portfolio-slider').owlCarousel({
             loop: true,
             margin: 30,
@@ -127,11 +127,21 @@ $(document).ready(function () {
             }
         });
     }
-    
-    
-    
-    
-    
+
+    // SETTING POSITION OF BUTTON ON FOOTER
+
+    var footer = $('footer').outerHeight() + 'px';
+    $('#footerButton').css("bottom", footer);
+
+    $(window).resize(function () {
+        var footer = $('footer').outerHeight() + 'px';
+        $('#footerButton').css("bottom", footer);
+    });
+
+
+
+
+
 
 });
 

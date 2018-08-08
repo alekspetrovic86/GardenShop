@@ -234,12 +234,12 @@ $linkBgColor: $white;
                 }
                 a{
                     font-family: 'SocialGothic-DemiBold';
-                    font-weight: bold;
+                    font-weight: normal;
                     color: $green-3;
                     padding: 39px 0;
                     display: block;
                     &.submenu-active{
-                        font-weight: bold;   
+                        font-weight: normal;   
                     }
                 }
                 &:hover{
