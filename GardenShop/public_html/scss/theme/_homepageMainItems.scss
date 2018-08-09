@@ -1,4 +1,4 @@
-
+//INDEX HTML (HOMEPAGE 2)
 
 
 .homepage-main-items{
@@ -57,18 +57,99 @@
 }
 
 
+//HOMEPAGE 1
+
+.homepage-main-items-page-1{
+    .row{
+        .col-12{
+            margin-bottom: 10px;
+        }
+        .col-12:first-of-type{
+            .homepage-main-items-wrapper{
+                background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%), url('assets/homepage/homepage-main-items-1.png'); 
+            } 
+            display: none!important;
+        }
+        .col-12:nth-of-type(2){
+            .homepage-main-items-wrapper{
+                background-image: linear-gradient(190.24deg, rgba(0,0,0,0) 0%, #000000 100%), url('assets/homepage/homepage1-main-items-1.png'); 
+                h1{
+                    padding-right: 10%;
+                }
+                a,p{
+                    color:$gray-100!important; 
+                }
+            }            
+        }
+        .col-12:nth-of-type(3){
+            .homepage-main-items-wrapper{
+                background-image: linear-gradient(190.24deg, rgba(0,0,0,0) 0%, #000000 100%), url('assets/homepage/homepage-main-items-3.png'); 
+                h1{
+                    padding-right: 10%;
+                }
+                a,p{
+                    color:$gray-100!important; 
+                }
+            }            
+        }       
+    }
+    .homepage-main-items-wrapper{       
+        height: 220px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding-left: 14px;
+        padding-bottom: 14px;
+        padding-right: 14px;
+    }
+    .homepage-main-items-details{
+        h1{
+            a{
+                font-size: 26px;                
+            }
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+}
+
+
+
+
+
 @media(min-width:576px){
+    
+    //INDEX HTML (HOMEPAGE 2)
+    
     .homepage-main-items{
         .homepage-main-items-wrapper{
-            height: 250px;
+            height: 300px;
             padding-left: 20px;
             padding-bottom: 20px;
             padding-right: 20px;
         }
     }
+    
+    //HOMEPAGE 1
+    
+    .homepage-main-items-page-1{
+        .homepage-main-items-wrapper{
+            height: 300px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+        }
+    }
+    
+    
 }
 
 @media(min-width:768px){
+    
+    //INDEX HTML (HOMEPAGE 2)
+    
     .homepage-main-items{       
         .homepage-main-items-details{
             h1{
@@ -81,10 +162,35 @@
             }
         }
     }
+    
+    
+    //HOMEPAGE 1
+    
+    .homepage-main-items-page-1{       
+        .homepage-main-items-details{
+            h1{
+                a{
+                    font-size: 30px;                
+                }
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
 }
 
 
 @media(min-width:992px){
+
+    //INDEX HTML (HOMEPAGE 2)
+
     .homepage-main-items{
         .row{
             .col-12{
@@ -112,7 +218,7 @@
             }
         }
         .homepage-main-items-wrapper{       
-            height: 300px;
+            height: 370px;
 
             padding-left: 20px;
             padding-bottom: 20px;
@@ -129,5 +235,57 @@
             }
         }
     }
+
+
+
+    //HOMEPAGE 1
+
+    .homepage-main-items-page-1{
+        .row{
+            .col-12{
+                margin-bottom: 0;
+            }
+            .col-12:first-of-type{
+                .homepage-main-items-wrapper{
+                    padding-right: 50%;
+                }  
+                margin-bottom: 20px;
+            }
+            .col-12:nth-of-type(2){
+                .homepage-main-items-wrapper{ 
+                    h1{
+                        padding-right: 60%;
+                    }
+                }            
+            }
+            .col-12:nth-of-type(3){
+                .homepage-main-items-wrapper{
+                    h1{
+                        padding-right: 60%;
+                    }
+                }            
+            }
+        }
+        .homepage-main-items-wrapper{       
+            height: 370px;
+
+            padding-left: 20px;
+            padding-bottom: 20px;
+            padding-right: 70px;
+        }
+        .homepage-main-items-details{
+            h1{
+                a{
+                    font-size: 2.57rem;                
+                }
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+
+
+
 
 }

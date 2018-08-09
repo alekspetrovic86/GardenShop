@@ -5,7 +5,7 @@ $footercolor: $white;
 footer{
     a,p{
         color: $footercolor;
-        font-size: 12px;
+        font-size: 10px;
     }
     img{
         margin-right: 8px;
@@ -48,6 +48,14 @@ footer{
 
 
 
+
+@media(min-width:576px){
+    footer{
+        a,p{
+            font-size: 12px;
+        }
+    }
+}
 
 @media(min-width:768px){
     footer{

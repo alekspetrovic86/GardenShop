@@ -1,0 +1,66 @@
+.our-products{
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    h3{
+        a{
+            color: $gray-300;            
+        }
+    }
+    figure{
+        a{
+            width: 260px;
+            height: 170px;  
+        }
+    }
+    a{
+        color: $gray-200;
+    }
+    h5{
+        a{
+            color: $green;
+            transition:0.4s ease;
+            &:hover{
+                color:darken($green,10%);
+            }
+        }
+    }
+}
+
+
+
+
+@media(min-width:576px){
+    .our-products{
+        figure{
+            a{
+                width: 220px;
+                height: 144px;  
+            }
+        }
+    }
+}
+
+
+@media(min-width:992px){
+    .our-products{
+        figure{
+            a{
+                width: 210px;
+                height: 138px;  
+            }
+        }
+    }
+}
+
+@media(min-width:1000px){
+    .our-products{
+        figure{
+            a{
+                width: 220px;
+                height: 144px;  
+            }            
+        }
+    }
+}
