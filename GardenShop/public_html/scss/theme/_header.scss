@@ -3,12 +3,12 @@ $link-color: $gray-100;
 
 
 header{
-    background-color: $gray-400!important;
+    background-color: $gray-300!important;
     color: $p-color;
-    font-size:10px;
+    font-size:9px;
     a{
         color: $link-color;
-        font-size: 10px;
+        font-size: 9px;
         &:hover{
             color: $p-color;
         }
@@ -22,7 +22,7 @@ header{
         div{
             margin-bottom: 5px;
             a:last-of-type{
-                margin-left: 18px;
+                margin-left: 21px;
             }
         }
     }
@@ -64,6 +64,7 @@ header{
         box-shadow: 0;
         background-color: $green-2;
         color:$white;
+        border-radius: 0 2px 2px 0;
     }
     button{
         span.fa{
@@ -88,9 +89,7 @@ header{
             div{
                 margin-bottom: 10px;              
             }
-
         }
-
 
         .row{
             div.col-12:first-of-type{
@@ -119,6 +118,5 @@ header{
             padding-left:160px;           
         }        
     }
-
 
 }

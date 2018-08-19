@@ -1,4 +1,4 @@
-//INDEX HTML (HOMEPAGE 2)
+//HOMEPAGE 2
 
 
 .homepage-main-items{
@@ -20,6 +20,9 @@
                 a,p{
                     color:$gray-100!important; 
                 }
+                a:hover{
+                    color: $green!important;
+                }
             }            
         }
         .col-12:nth-of-type(3){
@@ -30,6 +33,9 @@
                 }
                 a,p{
                     color:$gray-100!important; 
+                }
+                a:hover{
+                    color: $green!important;
                 }
             }            
         }
@@ -43,11 +49,14 @@
         padding-left: 14px;
         padding-bottom: 14px;
         padding-right: 14px;
+        a:hover{
+            color: $green!important;
+        }
     }
     .homepage-main-items-details{
         h1{
             a{
-                font-size: 26px;                
+                font-size: 26px;  
             }
         }
         p{
@@ -79,6 +88,9 @@
                 a,p{
                     color:$gray-100!important; 
                 }
+                a:hover{
+                    color: $green!important;
+                }
             }            
         }
         .col-12:nth-of-type(3){
@@ -89,6 +101,9 @@
                 }
                 a,p{
                     color:$gray-100!important; 
+                }
+                a:hover{
+                    color: $green!important;
                 }
             }            
         }       
@@ -102,6 +117,58 @@
         padding-left: 14px;
         padding-bottom: 14px;
         padding-right: 14px;
+        a:hover{
+            color: $green!important;
+        }
+    }
+    .homepage-main-items-details{
+        h1{
+            a{
+                font-size: 26px;                
+            }
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+}
+
+
+//HOMEPAGE 3
+
+.homepage-main-items-page-3{
+    .row{
+        .col-12{
+            margin-bottom: 10px;
+        }
+        .col-12:first-of-type{
+            .homepage-main-items-wrapper{
+                background-image: linear-gradient(190.24deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), url('assets/homepage/homepage-main-items-2.png'); 
+            } 
+        }
+        .col-12:nth-of-type(2){
+            .homepage-main-items-wrapper{
+                background-image: linear-gradient(190.24deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), url('assets/homepage/homepage1-main-items-1.png'); 
+            }            
+        }
+        .col-12:nth-of-type(3){
+            .homepage-main-items-wrapper{
+                background-image: linear-gradient(190.24deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), url('assets/homepage/homepage3-main-items-3.png'); 
+            }            
+        }       
+    }
+    .homepage-main-items-wrapper{       
+        height: 220px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding-left: 14px;
+        padding-bottom: 16px;
+        padding-right: 14px;
+        a:hover{
+            color: $green!important;
+        }
     }
     .homepage-main-items-details{
         h1{
@@ -119,10 +186,13 @@
 
 
 
+
+
+
 @media(min-width:576px){
-    
-    //INDEX HTML (HOMEPAGE 2)
-    
+
+    //HOMEPAGE 2
+
     .homepage-main-items{
         .homepage-main-items-wrapper{
             height: 300px;
@@ -131,9 +201,9 @@
             padding-right: 20px;
         }
     }
-    
+
     //HOMEPAGE 1
-    
+
     .homepage-main-items-page-1{
         .homepage-main-items-wrapper{
             height: 300px;
@@ -142,14 +212,36 @@
             padding-right: 20px;
         }
     }
-    
-    
+
+
+    //HOMEPAGE 3
+
+    .homepage-main-items-page-3{
+        .homepage-main-items-wrapper{
+            height: 300px;
+            padding-left: 18px;
+            padding-bottom: 28px;
+            padding-right: 18px;
+        }
+        .homepage-main-items-details{
+            h1{
+                a{
+                    font-size: 36px;                
+                }
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+
+
 }
 
 @media(min-width:768px){
-    
-    //INDEX HTML (HOMEPAGE 2)
-    
+
+    //HOMEPAGE 2
+
     .homepage-main-items{       
         .homepage-main-items-details{
             h1{
@@ -162,10 +254,10 @@
             }
         }
     }
-    
-    
+
+
     //HOMEPAGE 1
-    
+
     .homepage-main-items-page-1{       
         .homepage-main-items-details{
             h1{
@@ -178,18 +270,31 @@
             }
         }
     }
-    
-    
-    
-    
-    
-    
+
+
+    //HOMEPAGE 3
+
+    .homepage-main-items-page-3{       
+        .homepage-main-items-details{
+            h1{
+                a{
+                    font-size: 38px;                
+                }
+            }
+            p{
+                font-size: 17px;
+            }
+        }
+    }
+
+
+
 }
 
 
 @media(min-width:992px){
 
-    //INDEX HTML (HOMEPAGE 2)
+    //HOMEPAGE 2
 
     .homepage-main-items{
         .row{
@@ -287,5 +392,41 @@
 
 
 
+    //HOMEPAGE 3
 
+    .homepage-main-items-page-3{
+
+        .homepage-main-items-wrapper{       
+            height: 450px;
+            padding-left: 15px;
+            padding-bottom: 30px;
+            padding-right: 15px;
+        }
+        .homepage-main-items-details{
+            h1{
+                padding-right:30%;
+                a{
+                    font-size: 2.57rem;                
+                }
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+
+}
+
+@media(min-width:1200px){
+    //HOMEPAGE 3
+
+    .homepage-main-items-page-3{
+
+        .homepage-main-items-wrapper{       
+            height: 536px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+        }
+    }
 }
